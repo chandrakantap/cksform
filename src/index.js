@@ -4,10 +4,10 @@ const getErrors = (element) => {
   const elementDisplayName = element.dataset.displayName || element.name;
   const errors = [];
   if (element.validity.valueMissing) {
-    errors.push[`${elementDisplayName} is required`];
+    errors.push(`${elementDisplayName} is required`);
   }
   if (element.validity.typeMismatch) {
-    errors.push[`Please provide a valid ${element.type}`];
+    errors.push(`Please provide a valid ${element.type}`);
   }
   return errors;
 };
@@ -18,7 +18,7 @@ const useCKSForm = (initialValue = {}) => {
 
   const resetForm = () => setFormData({ ...initialValue });
 
-  const validate = (form) => {
+  const validateForm = (form) => {
     const isFormValid = form.checkValidity();
     const formErrors = isFormValid
       ? undefined
@@ -39,6 +39,18 @@ const useCKSForm = (initialValue = {}) => {
     }
     setErrors({});
     return true;
+  };
+  const validateField = (event) => {
+    if (event.target.name) {
+      const element = event.target;
+      const formErrors = { ...errors };
+      if (element.validity.valid) {
+        formErrors[element.name] = undefined;
+      } else {
+        formErrors[element.name] = getErrors(element);
+      }
+      setErrors(formErrors);
+    }
   };
 
   const onChangeField = (event) => {
@@ -62,7 +74,8 @@ const useCKSForm = (initialValue = {}) => {
     formData,
     onChangeField,
     resetForm,
-    validate,
+    validateForm,
+    validateField,
     errors,
     setErrors,
   };

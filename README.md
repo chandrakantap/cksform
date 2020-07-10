@@ -2,7 +2,7 @@
 
 Simple react form library using hook
 
-[![Build Status](https://travis-ci.com/chandrakantap/cksutil-hookform.svg?branch=master)](https://travis-ci.com/chandrakantap/cksutil-hookform)
+[![Build Status](https://travis-ci.com/chandrakantap/cksform.svg?branch=master)](https://travis-ci.com/chandrakantap/cksform)
 
 ```js
 npm install cksform

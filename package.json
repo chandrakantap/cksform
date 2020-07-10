@@ -1,11 +1,11 @@
 {
   "name": "cksform",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "license": "MIT",
-  "description": "Simple react form library using hook",
-  "repository": "github:chandrakantap/cksutil-hookform.git",
-  "bugs": "https://github.com/chandrakantap/cksutil-hookform/issues",
-  "homepage": "https://github.com/chandrakantap/cksutil-hookform",
+  "description": "Simple, lightweight, easy to use react hook form, leveraging HTML5 api for validation",
+  "repository": "git@github.com:chandrakantap/cksform.git",
+  "bugs": "https://github.com/chandrakantap/cksform/issues",
+  "homepage": "https://github.com/chandrakantap/cksform",
   "keywords": [
     "react",
     "hooks",
