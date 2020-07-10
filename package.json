@@ -1,6 +1,6 @@
 {
   "name": "cksform",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "Simple react form library using hook",
   "repository": "github:chandrakantap/cksutil-hookform.git",
