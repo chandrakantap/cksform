@@ -6,8 +6,8 @@ export default function ({ errors = {}, fieldName }) {
         return null;
     }
     return (
-        <ul className="error">
-            {fieldErrors.map((error, index) => (<li key={index}>{error}</li>))}
-        </ul>
+      <ul className="error">
+        {fieldErrors.map((error, index) => (<li key={index}>{error}</li>))}
+      </ul>
     )
 }

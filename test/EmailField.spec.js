@@ -9,22 +9,22 @@ expect.addSnapshotSerializer(createSerializer({ mode: 'deep', noKey: true, ignor
 const EmailFieldForm = ({ onSubmit, ...props }) => {
     const { formData, onChangeField, errors, handleSubmit, validateField } = useCKSForm({ emailId: '' });
     return (
-        <form noValidate autoComplete="off">
-            <input
-                type="email"
-                name="emailId"
-                required
-                minLength={10}
-                maxLength={12}
-                value={formData.emailId}
-                onChange={onChangeField}
-                onBlur={validateField}
-                data-display-name="Email ID"
-                {...props}
-            />
-            <Errors errors={errors} fieldName="emailId" />
-            <input id="submitBtn" type="button" value="Submit" onClick={handleSubmit(onSubmit)} />
-        </form>
+      <form noValidate autoComplete="off">
+        <input
+          type="email"
+          name="emailId"
+          required
+          minLength={10}
+          maxLength={12}
+          value={formData.emailId}
+          onChange={onChangeField}
+          onBlur={validateField}
+          data-display-name="Email ID"
+          {...props}
+        />
+        <Errors errors={errors} fieldName="emailId" />
+        <input id="submitBtn" type="button" value="Submit" onClick={handleSubmit(onSubmit)} />
+      </form>
     );
 }
 describe('Email field', () => {

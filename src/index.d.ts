@@ -1,13 +1,13 @@
 export as namespace CKSForm;
 
 interface iCKSForm {
-    handleSubmit: Function,
-    onChangeField: Function,
-    resetForm: Function,
-    validateForm: Function,
-    validateField: Function,
-    errors: object,
-    setErrors: Functions,
+    handleSubmit: Function;
+    onChangeField: Function;
+    resetForm: Function;
+    validateForm: Function;
+    validateField: Function;
+    errors: object;
+    setErrors: Functions;
 }
 
 

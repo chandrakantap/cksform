@@ -6,10 +6,10 @@ import "./App.css";
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <h1>Simple Form</h1>
-                <RegistrationForm />
-            </div>
+          <div className="App">
+            <h1>Simple Form</h1>
+            <RegistrationForm />
+          </div>
         );
     }
 }
