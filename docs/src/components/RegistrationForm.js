@@ -1,20 +1,8 @@
-# cksform
-
-Simple react form library using hook
-
-[![Build Status](https://travis-ci.com/chandrakantap/cksform.svg?branch=master)](https://travis-ci.com/chandrakantap/cksform)
-
-```js
-npm install cksform
-```
-
-# Qucik Start
-
-```js
 import React from 'react';
-import useCKSForm from 'cksform';
+import Errors from './Errors';
+import useCKSForm from '../../../src/index';
 
-const initialValue = {
+const formFields = {
     title: '',
     name: '',
     age: '',
@@ -22,27 +10,15 @@ const initialValue = {
     email_id: '',
     mobile_no: ''
 }
-const Errors = ({ errors = {}, fieldName }) {
-    const fieldErrors = errors[fieldName];
-    if (!Array.isArray(fieldErrors) || fieldErrors.length === 0) {
-        return null;
-    }
-    return (
-        <ul className="error">
-            {fieldErrors.map((error, index) => (<li key={index}>{error}</li>))}
-        </ul>
-    )
-}
-
 export default function () {
-    const { formData, onChangeField, errors, handleSubmit, validateField } = useCKSForm(initialValue);
+    const { formData, onChangeField, errors, handleSubmit, validateField } = useCKSForm(formFields);
 
     return (
         <form noValidate autoComplete="off">
             <label>Title: </label>
             <div>
                 <input type="text" name="title"
-                    required minLength={3}
+                    required minLength={6}
                     value={formData.title}
                     onChange={onChangeField}
                     onBlur={validateField}
@@ -52,8 +28,7 @@ export default function () {
 
             <label>Name: </label>
             <div>
-                <input type="text" name="name" required
-                    data-display-name="Name"
+                <input type="text" name="name" required data-display-name="Name"
                     onChange={onChangeField}
                     value={formData.name} />
                 <Errors errors={errors} fieldName="name" />
@@ -109,4 +84,3 @@ export default function () {
         </form>
     )
 }
-```

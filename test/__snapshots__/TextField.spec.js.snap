@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input field of type text Validates when no value provided 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+>
+  <input
+    data-display-name="Title"
+    minLength={6}
+    name="title"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="text"
+    value=""
+  />
+  <ul
+    className="error"
+  >
+    <li>
+      Title is required.
+    </li>
+  </ul>
+  <input
+    id="submitBtn"
+    onClick={[Function]}
+    type="button"
+    value="Submit"
+  />
+</form>
+`;
+
+exports[`Input field of type text renders properly 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+>
+  <input
+    data-display-name="Title"
+    minLength={6}
+    name="title"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="text"
+    value=""
+  />
+  <input
+    id="submitBtn"
+    onClick={[Function]}
+    type="button"
+    value="Submit"
+  />
+</form>
+`;

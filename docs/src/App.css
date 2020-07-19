@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #DADADA;
+  overflow: hidden;
+}
+.App {
+    margin: 0 auto;
+    padding: 2rem;
+    height: calc(100vh);
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width:800px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFF;
+  }
+h1{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+form{
+  display: grid;
+  grid-gap:10px;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  align-items: baseline;
+  margin-top: 4rem;
+}
+label{
+  font-size: 1.2rem;
+  text-align:right;
+}
+input{
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 16px;
+  font-family: inherit;
+}
+input:error{
+  border-color: red;
+}
+input[type='button'],button{
+  padding: 0.5rem 1rem;
+  width: max-content;
+  cursor: pointer;
+}
+ul.error{
+  font-size:0.8rem;
+  color:red;
+  margin-top:5px;
+  list-style-type: none;
+}

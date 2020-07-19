@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Email field Call onSubmit if validation successful 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+>
+  <input
+    data-display-name="Email ID"
+    maxLength={12}
+    minLength={10}
+    name="emailId"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="email"
+    value="abcd@abc.com"
+  />
+  <input
+    id="submitBtn"
+    onClick={[Function]}
+    type="button"
+    value="Submit"
+  />
+</form>
+`;
+
+exports[`Email field Validates when invalid value provided 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+>
+  <input
+    data-display-name="Email ID"
+    maxLength={12}
+    minLength={10}
+    name="emailId"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="email"
+    value="pal.chand"
+  />
+  <ul
+    className="error"
+  >
+    <li>
+      Please provide a valid email.
+    </li>
+  </ul>
+  <input
+    id="submitBtn"
+    onClick={[Function]}
+    type="button"
+    value="Submit"
+  />
+</form>
+`;
+
+exports[`Email field Validates when no value provided 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+>
+  <input
+    data-display-name="Email ID"
+    maxLength={12}
+    minLength={10}
+    name="emailId"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="email"
+    value=""
+  />
+  <ul
+    className="error"
+  >
+    <li>
+      Email ID is required.
+    </li>
+  </ul>
+  <input
+    id="submitBtn"
+    onClick={[Function]}
+    type="button"
+    value="Submit"
+  />
+</form>
+`;
+
+exports[`Email field renders properly 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+>
+  <input
+    data-display-name="Email ID"
+    maxLength={12}
+    minLength={10}
+    name="emailId"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="email"
+    value=""
+  />
+  <input
+    id="submitBtn"
+    onClick={[Function]}
+    type="button"
+    value="Submit"
+  />
+</form>
+`;

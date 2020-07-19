@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Number field Call onSubmit if validation successful 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+>
+  <input
+    data-display-name="Age"
+    max={65}
+    min={18}
+    name="age"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="number"
+    value={34}
+  />
+  <input
+    id="submitBtn"
+    onClick={[Function]}
+    type="button"
+    value="Submit"
+  />
+</form>
+`;
+
+exports[`Number field Validates on blur 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+>
+  <input
+    data-display-name="Age"
+    max={65}
+    min={18}
+    name="age"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="number"
+    value=""
+  />
+  <ul
+    className="error"
+  >
+    <li>
+      Age is required.
+    </li>
+  </ul>
+  <input
+    id="submitBtn"
+    onClick={[Function]}
+    type="button"
+    value="Submit"
+  />
+</form>
+`;
+
+exports[`Number field Validates on blur with valid data 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+>
+  <input
+    data-display-name="Age"
+    max={65}
+    min={18}
+    name="age"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="number"
+    value={45}
+  />
+  <input
+    id="submitBtn"
+    onClick={[Function]}
+    type="button"
+    value="Submit"
+  />
+</form>
+`;
+
+exports[`Number field Validates when no value provided 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+>
+  <input
+    data-display-name="Age"
+    max={65}
+    min={18}
+    name="age"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="number"
+    value=""
+  />
+  <ul
+    className="error"
+  >
+    <li>
+      Age is required.
+    </li>
+  </ul>
+  <input
+    id="submitBtn"
+    onClick={[Function]}
+    type="button"
+    value="Submit"
+  />
+</form>
+`;
+
+exports[`Number field Validates when value is greater than maximum 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+>
+  <input
+    data-display-name="Age"
+    max={65}
+    min={18}
+    name="age"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="number"
+    value={70}
+  />
+  <ul
+    className="error"
+  >
+    <li>
+      Age must be below 65.
+    </li>
+  </ul>
+  <input
+    id="submitBtn"
+    onClick={[Function]}
+    type="button"
+    value="Submit"
+  />
+</form>
+`;
+
+exports[`Number field Validates when value is smaller than minimum 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+>
+  <input
+    data-display-name="Age"
+    max={65}
+    min={18}
+    name="age"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="number"
+    value={12}
+  />
+  <ul
+    className="error"
+  >
+    <li>
+      Age must be atleast 18.
+    </li>
+  </ul>
+  <input
+    id="submitBtn"
+    onClick={[Function]}
+    type="button"
+    value="Submit"
+  />
+</form>
+`;
+
+exports[`Number field renders properly 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+>
+  <input
+    data-display-name="Age"
+    max={65}
+    min={18}
+    name="age"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="number"
+    value=""
+  />
+  <input
+    id="submitBtn"
+    onClick={[Function]}
+    type="button"
+    value="Submit"
+  />
+</form>
+`;
