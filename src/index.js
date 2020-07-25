@@ -48,6 +48,7 @@ const useCKSForm = (initialValue = {}) => {
 
   const handleSubmit = (callBack) => (event) => {
     const { form } = event.target;
+    const { form } = event.currentTarget;
     const isFormValid = form.checkValidity();
     const formErrors = isFormValid
       ? undefined
