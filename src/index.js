@@ -113,3 +113,4 @@ export const useCKSForm = (initialValue = {}) => {
   };
 };
 
+export default useCKSForm;
