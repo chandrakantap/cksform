@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { createSerializer } from 'enzyme-to-json';
-import useCKSForm from '../src/index';
+import { useCKSForm } from '../src/index';
 import Errors from '../docs/src/components/Errors';
 
 expect.addSnapshotSerializer(createSerializer({ mode: 'deep', noKey: true, ignoreDefaultProps: true }));

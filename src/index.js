@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable import/prefer-default-export */
 
 import { useState } from 'react';
 
@@ -40,14 +41,14 @@ const getErrors = (element) => {
 };
 
 
-const useCKSForm = (initialValue = {}) => {
+export const useCKSForm = (initialValue = {}) => {
   const [formData, setFormData] = useState({ ...initialValue });
   const [errors, setErrors] = useState({});
 
   const resetForm = () => setFormData({ ...initialValue });
 
   const handleSubmit = (callBack) => (event) => {
-    const { form } = event.target;
+    event.preventDefault();
     const { form } = event.currentTarget;
     const isFormValid = form.checkValidity();
     const formErrors = isFormValid
@@ -69,7 +70,6 @@ const useCKSForm = (initialValue = {}) => {
       setErrors({});
       callBack && callBack(event, formData);
     }
-
   };
 
   const validateField = (event) => {
@@ -113,4 +113,3 @@ const useCKSForm = (initialValue = {}) => {
   };
 };
 
-export default useCKSForm;
